@@ -4,9 +4,9 @@
 
 export PATH="$HOME/opt/cross/bin:$PATH"
 
-make clean
 make
 
+rm -r isodir
 mkdir -p isodir/boot/grub
 cp myos.bin isodir/boot/myos.bin
 cp grub.cfg isodir/boot/grub/grub.cfg
